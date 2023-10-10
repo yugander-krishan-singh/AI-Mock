@@ -72,9 +72,11 @@ function App() {
         'IQoJb3JpZ2luX2VjEMj//////////wEaCXVzLWVhc3QtMSJHMEUCIBzngEY9Mg0kZucm2HIZeBN58+BNDUEp7oaHLgxTIlOQAiEAhfbUQxgJoronMuCtBfocDu6GcDVfcz0qPnqtp0N0M6wqqAII0f//////////ARABGgw4MDMxMzIxNTI2ODkiDDyYMIe2OtsvCXTIiir8ARiXg5z5StII8Rztdo3aWXUBwO5J9MrUhPY/z44FXV8TDSVXeUm3f6jVED5a8rOmReAG3b9i9IinvSTouAAR3hREDT8P7W+LFSiLZlqOUxwYE3IMi0dIos/BtRXP2qUxmSZ7D0bTEhvPD75orgrV3TPAytRuZuqpGq+C5s6muRDuybgyagxTQZ28R8Pv2QfbvTFMp9HlXNkhVSfGkGqqWRZd2Ul26AElPTVdn2QN61Nbjghjxm+Q1oGIglnzzS+lxh22W/FB+XkYmKzjF96zhNJJwBC9x0JtYIGbDmXkzJLEiiyNxS6Yu9dXid5Ks2982cUqxMNLBukmSR98FzCo+JOpBjqdAePfxhLhRYXYzuwVMVdm2m+JHhtmDx/udhSTQyThgW1Qb6DIroahbIoKXIaBuImRmBTdAflr0euX8ovHLZKTVSuQDCUq0LgRRcPx9nCwh+lSQjfE/7H9N7cPyeAbm+GMEI8wjqiseYt8tqmkwkiyzt5fhoJo575tLiNvKgOOjmODGbIqY+4Uia5ofSyVgMUIZuSWTBLSenyVvi8BkPk=',
       region: 'us-east-1',
     });
+
+    const endDecorator =  "Also remove all \n characters from output  \n\n. Remove all \"\" from the output. Also ignore all the spelling mistakes."
     const params = {
       body: JSON.stringify({
-        prompt: `Human: ${userPrompt} Assistant:`,
+        prompt: `Human: ${userPrompt} ${endDecorator} Assistant:`,
         temperature: 0.5,
         top_p: 1,
         top_k: 250,

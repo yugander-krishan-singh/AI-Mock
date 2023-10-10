@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Sample prompts
+
+#### ORC Select items page
+
+```
+You have to give me an HTML code. Before and after html code add string \"YUGI\" indicating start and end. The html should be able to create a page with Heading "Return Items" aligned in center. This will be referenced as MainHeading in prompt.  Below the MainHeading add a subheading with text "Select Items" aligned left. The size of subheading should be 3 level less than main heading and text style should be a normal. Below the subheading create a box with visible boundary and flex layout, with some vertical center, with some padding which should have image placeholder on left side and on right side it should have the name of image as "ASICS Men's Jolt 2 Black/White Running Shoes". Add one more entry about shirt in similar style to shoe below shoe entry. Each card should have checkbox to select which should be first item  in the card. Add a button named "Submit" below all cards with some spacing at top. Also remove all \n characters from output  \n\n. Remove all "" from the output. Also ignore all the spelling mistakes.
+```
